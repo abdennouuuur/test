@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Book of Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffebcd;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+        }
+        .tab {
+            background: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .tab:hover {
+            color: #fff;
+        }
+        .tab:hover:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        .tab.chapter1:hover:before {
+            background-image: url('images/chapter1-bg.jpg');
+        }
+        .tab a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffebcd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mom's Book of Love</h1>
+</header>
+
+<div class="container">
+    <div class="tab chapter1">
+        <a href="chapter1.html">
+            <h2>Chapter One: Our Family Story</h2>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>With love, from your family</p>
+</footer>
+
+</body>
+</html>
